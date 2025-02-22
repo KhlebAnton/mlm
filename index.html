@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body class="bg_green">
+    <div class="screen screen-preloader">
+        <div class="bg_circle hidden"></div>
+        <div class="logo hidden">
+            <img class="logo__img" src="./img/MLM LOGO ALEX.png" alt="logo">
+        </div>
+    </div>
+    <div class="screen screen-welcome hidden">
+        <div class="welcome-animated">
+            <div class="welcome-user_wrapper">
+                <div class="welcome-user">
+                    <img class="welcome-user_img" src="./img/welcome_user/1.jfif">
+                </div>
+            </div>
+            <div class="welcome-user_wrapper">
+                <div class="welcome-user">
+                    <img class="welcome-user_img" src="./img/welcome_user/2.jfif">
+                </div>
+            </div>
+            <div class="welcome-user_wrapper">
+                <div class="welcome-user">
+                    <img class="welcome-user_img" src="./img/welcome_user/3.jfif">
+                </div>
+            </div>
+            <div class="welcome-user_wrapper">
+                <div class="welcome-user">
+                    <img class="welcome-user_img" src="./img/welcome_user/4.jfif">
+                </div>
+            </div>
+            <div class="welcome-user_wrapper">
+                <div class="welcome-user">
+                    <img class="welcome-user_img" src="./img/welcome_user/5.jfif">
+                </div>
+            </div>
+        </div>
+        <div class="welcome-content">
+            <div class="welcome-info">
+                <div class="welcome-title">
+                    MLM FIELD
+                </div>
+                <div class="welcome-text">
+                    Найдите друзей и партнеров по бизнесу, наслаждайтесь качеством общения. <br>Об остальном позаботимся мы.
+                </div>
+            </div>
+            <div class="video-items-wrapper">
+                <div class="video-item">
+                    <div class="video-item__img-wrapper">
+                        <img class="video-item__img" src="./img/video_previe/1.jfif" alt="">
+                    </div>
+                    
+                    <div class="video-item__text">Промо-ролик</div>
+                </div>
+                <div class="video-item">
+                    <div class="video-item__img-wrapper">
+                        <img class="video-item__img" src="./img/video_previe/2.png" alt="">
+                    </div>
+                    <div class="video-item__text">Инструкция по пользованию</div>
+                </div>
+            </div>
+            <div class="btn-group_row">
+                <div class="btn btn_secondary" onclick="showScreen(screenAuth)" ontouchstart>Войти</div>
+                <span class="politics-text">Продолжая, вы соглашаетесь с Условиями обслуживания и Политикой конфиденциальности.</span>
+            </div>
+        </div>
+        
+    </div>
+    <div class="screen screen_form screen-authorization hidden">
+        <div class="screen_form__header">
+            <div class="btn btn_prev" onclick="hideScreen(screenAuth)" ontouchstart></div>
+            <span>Войдите в учётную запись</span>
+        </div>
+        <div class="screen_form__content">
+            <form class="form" id="authForm">
+                <div class="form-wrapper">
+                    <label>
+                        <div class="input__title">
+                            Электронная почта
+                        </div>
+                        <input type="email" name="email" id="authFormEmail" placeholder="info@mlm.ru" required>
+                        <div class="remove-btn" style="display: none;"></div>
+                    </label>
+                    <label>
+                        <div class="input__title">
+                            пароль
+                        </div>
+                        <input type="password" name="password" id="authFormPassword" placeholder="Введите пароль" required>
+                        <div class="remove-btn" style="display: none;"></div>
+                    </label>
+                    <span class="lost-password">Забыли пароль?</span>
+                </div>
+                <div class="btn-group_row">
+                    <span onclick="showScreen(screenReg)" ontouchstart>Зарегистрируйтесь прямо сейчас</span>
+                    <button class="btn btn_primary" ontouchstart>Войти</div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="screen screen_form screen-registration hidden">
+        <div class="screen_form__header">
+            <div class="btn btn_prev" onclick="hideScreen(screenReg)" ontouchstart></div>
+            <span>Войдите в учётную запись</span>
+        </div>
+        <div class="screen_form__content">
+            <form class="form" id="regForm">
+                <div class="form-wrapper">
+                    <label>
+                        <div class="input__title">
+                            Имя
+                        </div>
+                        <input type="text" name="name" id="regFormName" placeholder="Имя" required>
+                        <div class="remove-btn" style="display: none;"></div>
+                    </label>
+                    <label>
+                        <div class="input__title">
+                            Фамилия
+                        </div>
+                        <input type="text" name="surname" id="regFormSurname" placeholder="Фамилия" required>
+                        <div class="remove-btn" style="display: none;"></div>
+                    </label>
+                    <label>
+                        <div class="input__title">
+                            Электронная почта
+                        </div>
+                        <input type="email" name="email" id="regFormEmail" placeholder="info@mlm.ru" required>
+                        <div class="remove-btn" style="display: none;"></div>
+                    </label>
+                    <label>
+                        <div class="input__title">
+                            номер телефона
+                        </div>
+                        <input type="tel" name="tel" id="regFormPhone" placeholder="+7 (977) 777-77-77" required>
+                        <div class="remove-btn" style="display: none;"></div>
+                    </label>
+                    <label>
+                        <div class="input__title">
+                            пароль
+                        </div>
+                        <input type="text" name="password" id="regFormPassword" placeholder="Введите пароль" required>
+                        <div class="remove-btn" style="display: none;"></div>
+                    </label>
+                
+                </div>
+                <div class="btn-group_row">
+                    
+                    <button class="btn btn_primary" ontouchstart>Регистрация</div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./scripts/loader.js"></script>
+</body>
+
+</html>
