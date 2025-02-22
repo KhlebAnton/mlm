@@ -24,6 +24,7 @@
 html {
     background-color: #2CBA00;
     background-attachment: fixed;
+    -webkit-text-size-adjust: none; 
 }
 html,
 body {
