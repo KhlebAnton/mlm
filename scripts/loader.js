@@ -1,3 +1,18 @@
+document.addEventListener('DOMContentLoaded', ()=> {
+    const logo = document.querySelector('.logo');
+    const bgCircle = document.querySelector('.bg_circle');
+    
+    bgCircle.classList.remove("hidden");
+    logo.classList.remove("hidden");
+    setTimeout(() => { logo.classList.add("anim"); }, 1100);
+    
+    setTimeout(() => {
+        hideScreen(screenPreloader);
+        showScreen(screenWelcome);
+        startAnimWelcome();
+    
+    }, 3000);
+});
 // screen
 const screenPreloader = document.querySelector('.screen-preloader');
 const screenWelcome = document.querySelector('.screen-welcome');
@@ -11,27 +26,17 @@ function showScreen(screen) {
     screen.classList.remove('hidden')
 };
 // preloader
-const logo = document.querySelector('.logo');
-const bgCircle = document.querySelector('.bg_circle');
-
-bgCircle.classList.remove("hidden");
-logo.classList.remove("hidden");
-setTimeout(() => { logo.classList.add("anim"); }, 1100);
 
 
 
-setTimeout(() => {
-    hideScreen(screenPreloader);
-    showScreen(screenWelcome);
-    startAnimWelcome();
 
-}, 3000);
+
 
 const welcomeAnim = document.querySelector('.welcome-animated');
 
 function startAnimWelcome() {
     welcomeAnim.classList.add('anim');
-    
+
 }
 
 
