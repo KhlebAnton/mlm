@@ -328,6 +328,10 @@ input {
     background: #F6F9FF;
 
 }
+.screen_form.hidden {
+transform: translateY(100%);
+opacity: 1;
+}
 .screen_form__content {
     padding: 12px 24px;
     flex-grow: 2;
