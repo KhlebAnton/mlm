@@ -78,6 +78,9 @@ input {
 }
 button {
     border: none;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: inherit;
+    font-size: 1em;
 }
 .politics-text {
     font-size: 11px;
