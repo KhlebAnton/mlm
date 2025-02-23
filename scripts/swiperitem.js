@@ -7,17 +7,16 @@ document.addEventListener('DOMContentLoaded', () => {
         let startX;
         let translateX = 0;
         let swiped = false;
-
-        let isDragging = false; // Флаг для отслеживания активного перетаскивания
+        let isDragging = false;
 
         const swipeThreshold = 150; // Порог в 150px до конца
 
         const handleStart = (e) => {
-            e.preventDefault(); // Предотвращаем стандартное поведение
+            e.preventDefault();
             isDragging = true;
             startX = e.clientX - translateX;
-            swipeBlock.style.transition = 'none'; // Убираем анимацию во время перетаскивания
-            swipeText.style.opacity = '0'; // Скрываем текст
+            swipeBlock.style.transition = 'none';
+            swipeText.style.opacity = '0';
         };
 
         const handleMove = (e) => {
@@ -44,21 +43,20 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!isDragging) return;
             isDragging = false;
             startX = null;
-            swipeBlock.style.transition = 'transform 0.3s ease-out'; // Восстанавливаем анимацию
+            swipeBlock.style.transition = 'transform 0.3s ease-out';
 
             // Проверяем, был ли свайп достаточно далеко
             const maxTranslate = container.offsetWidth - swipeBlock.offsetWidth;
             const thresholdTranslate = maxTranslate - swipeThreshold;
 
             if (translateX >= thresholdTranslate) {
-                translateX = maxTranslate; // Остаемся в конце
+                translateX = maxTranslate;
                 swiped = true;
                 setTimeout(() => {
-                    resetSwipe()
-
-                }, 1000)
+                    resetSwipe();
+                }, 1000);
             } else {
-                translateX = 0; // Возвращаемся в начало
+                translateX = 0;
                 swiped = false;
             }
 
@@ -67,23 +65,21 @@ document.addEventListener('DOMContentLoaded', () => {
             // Сбрасываем состояние после завершения анимации
             swipeBlock.addEventListener('transitionend', () => {
                 if (swiped) {
-                    swipeBlock.style.cursor = 'default'; // Меняем курсор
-                    swipeBlock.removeEventListener('mousedown', handleStart);
-                    swipeBlock.removeEventListener('mousemove', handleMove);
-                    swipeBlock.removeEventListener('mouseup', handleEnd);
-                    swipeBlock.removeEventListener('mouseleave', handleEnd);
+                    
                     showScreenDate();
                 } else {
-                    swipeText.style.opacity = '1'; // Восстанавливаем текст
+                    swipeText.style.opacity = '1';
                 }
-            }, { once: true }); // Запускаем только один раз
+            }, { once: true });
         };
+
         function resetSwipe() {
-            translateX = 0; // Возвращаемся в начало
+            translateX = 0;
             swiped = false;
             swipeBlock.style.transform = `translateX(${translateX}px)`;
-            swipeText.style.opacity = '1'
+            swipeText.style.opacity = '1';
         }
+
         swipeBlock.addEventListener('mousedown', handleStart);
         swipeBlock.addEventListener('mousemove', handleMove);
         swipeBlock.addEventListener('mouseup', handleEnd);
