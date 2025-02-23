@@ -76,7 +76,9 @@ input {
     cursor: pointer;
 
 }
-
+button {
+    border: none;
+}
 .politics-text {
     font-size: 11px;
     line-height: 16px;
@@ -583,14 +585,26 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 132px;
+    height: 102px;
     padding: 0 16px 21px;
     display: flex;
     flex-direction: column;
     gap: 16px;
     text-align: center;
 }
-
+.screen__footer::before {
+    pointer-events: none;
+    z-index: -2;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    top: -30px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    content: '© 2025 Проведение конференций';
+}
 .screen__footer__nav {
     position: relative;
     width: 100%;
@@ -609,6 +623,7 @@ body {
 .screen__footer__nav::before {
     width: 150px;
     height: 150px;
+    pointer-events: none;
     content: '';
     position: absolute;
     background: url('../img/footer_top.png') 50% / contain no-repeat;
@@ -616,12 +631,7 @@ body {
     right: 40px;
 }
 
-.copyright {
-    color: #FFFFFF;
-    font-size: 12px;
-    font-weight: 400;
-    font-family: 'Inter', sans-serif;
-}
+
 
 .footer__nav-item {
     display: flex;
@@ -1305,6 +1315,231 @@ body {
 .active-call__desc {
     flex-grow: 2;
 }
+
+/* profile page */
+.screen-profile {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 36px;
+    position: static;
+}
+.subscription-card {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 18px 16px 24px;
+    border-radius: 20px;
+    background: linear-gradient(105.14deg, #AD8400 3.44%, #EDB400 14.76%, #DCA700 28.43%, #F9BE00 38.81%, #EFB600 58.14%, #C59500 67.57%, #D6A300 83.6%, #AD8400 97.74%);
+    border: 1px solid #F5BB00;
+}
+.subscription-card__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #795C00;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+.subscription-card__data {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 18px;
+    
+}
+.subscription-card.red_card {
+    background: linear-gradient(98.92deg, #FF3030 3.53%, #DE0000 24.19%, #EE0000 41.1%, #E90000 57.07%, #FF0000 77.26%, #CA0000 97.45%);
+    border: 1px solid #D20000;
+}
+.subscription-card.red_card .subscription-card__title {
+    color: #ffffff;
+}
+.screen-profile .screen__content {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    
+}
+.message__save {
+    position: fixed;
+    z-index: 10;
+    top: 80px;
+    width: 100%;
+    pointer-events: none;
+    animation: message 1s ease;
+    display: none;
+}
+@keyframes message {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+.message__wrapper {
+    padding: 12px 16px;
+    background: #F6FFF9;
+    border: 1px solid #48C178;
+    color: #4C9B6B;
+    max-width: 250px;
+    width: 100%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 16px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.message__wrapper::before {
+    width: 20px;
+    height: 20px;
+    content: '';
+    display: block;
+    background: url('../img/check.svg') 50% / contain no-repeat;
+    
+    flex-shrink: 0;
+}
+.form-edit-profile {
+    padding: 24px;
+    background: #FFFFFF;
+border-radius: 20px;
+box-shadow: 0px 0px 10px 0px #00467E0F;
+display: flex;
+flex-direction: column;
+gap: 24px;
+}
+.edit-profile__photo_prev {
+    width: 148px;
+    height: 148px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+.edit-profile__btn-photo {
+    border: 1px solid #165C00;
+    border-radius: 10px;
+     color: #196F00;
+     height: 48px;
+}
+.edit-profile__inputs label {
+    position: relative;
+    display: block;
+    font-family: "Intel", sans-serif;
+}
+.password-toggle input {
+    padding-right: 40px; /* Отступ для иконки */
+}
+.password-toggle .toggle-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none; /* Запрещаем выделение текста */
+    background: url('../img/eye-open.svg') 50% / contain no-repeat;
+    width: 20px;
+    height: 20px;
+}
+.password-toggle .toggle-icon.eye-close {
+    background: url('../img/eye-close.svg') 50% / contain no-repeat;
+}
+.edit-profile__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.edit-profile__inputs label {
+    background: #F5F5F5;
+    height: 52px;
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.edit-profile__inputs input {
+   background-color: inherit;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+}
+.edit-profile__inputs input:focus {
+    outline: none;
+}
+label:focus-within {
+    outline: 1px solid #0077FF; /* Пример стиля outline */
+}
+.placeholder-text {
+    font-size: 12px;
+    color: #909090;
+}
+.form__btns {
+    display: flex;
+    gap: 16px;
+}
+.form-btn {
+    height: 62px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.form-btn_logout::before {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url('../img/logout.svg') 50% / contain no-repeat;
+}
+.form-btn_save::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 12px;
+    background: url('../img/db_check_blac.svg') 50% / contain no-repeat;
+}
+
+.edit-profile__title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+
+}
+.edit-profile__text {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width:800px) {
     .screen__header {

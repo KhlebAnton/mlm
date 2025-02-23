@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css?ver=9">
+</head>
+
+<body>
+    <div class="message__save">
+        <div class="message__wrapper">
+            <span>Данные успешно сохранены</span>
+        </div>
+
+    </div>
+    <div class="screen screen-profile">
+        <header class="screen__header">
+            <a href="../" class="btn btn_header btn-home" ontouchstart></a>
+            <div class="btn btn_header btn-profile" ontouchstart>
+                <div class="profile__img-wrapper">
+                    <img class="profile__img" src="../img/img_profile.jfif">
+                    <div class="profile__online"></div>
+                </div>
+                <div class="profile__desc">
+                    <div class="profile__user-name">
+                        <span class="user-name">Инна</span>
+                        <span class="user-surname">Васильева</span>
+                    </div>
+                    <div class="profile__subscription-date">Подписка до 12.10.2025</div>
+                </div>
+            </div>
+        </header>
+        <div class="screen__content">
+            <div class="subscription-card">
+                <div class="subscription-card__title">
+                    подписка
+                </div>
+                <div class="subscription-card__data">До окончания осталось 23 дня</div>
+            </div>
+            <div class="subscription-card red_card">
+                <div class="subscription-card__title">
+                    Приобрести подписку
+                </div>
+                <div class="subscription-card__data">Срок вашей подписки истёк, продлите подписку!</div>
+            </div>
+            <form id="formEditProfile" class="form-edit-profile">
+                <div class="edit-profile__desc">
+                    <div class="edit-profile__title">
+                        Редактирование данных
+                    </div>
+                    <div class="edit-profile__text">
+                        На данной странице вы можете скорректировать данные вашего профиля а так-же приобрести подписку
+                    </div>
+                </div>
+                <div class="edit-profile__photo">
+                    <div id="preview-container">
+                        <img class="edit-profile__photo_prev" id="preview-image" src="../img/user.png" alt="Preview">
+                    </div>
+                    <input type="file" id="upload-button" accept="image/*" style="display: none;">
+                    <label class="btn edit-profile__btn-photo" for="upload-button">
+                        Загрузить фото
+                    </label>
+                </div>
+                <div class="edit-profile__inputs">
+                    <label>
+                        <div class="placeholder-text" style="display: none;">Логин</div>
+                        <input type="text" name="login" id="editFormLogin" placeholder="Логин" required>
+
+
+                    </label>
+                    <label>
+                        <div class="placeholder-text" style="display: none;">ФИО</div>
+                        <input type="text" name="name" id="editFormName" placeholder="ФИО" required>
+
+
+                    </label>
+                    <label>
+                        <div class="placeholder-text" style="display: none;">Телефон</div>
+                        <input type="tel" name="tel" id="editFormTel" placeholder="Телефон" required>
+
+
+                    </label>
+                    <label>
+                        <div class="placeholder-text" style="display: none;">Электронная почта</div>
+                        <input type="email" name="email" id="editFormEmail" placeholder="Электронная почта" required>
+
+
+                    </label>
+                    <label class="password-toggle">
+                        <div class="placeholder-text" style="display: none;">Пароль</div>
+                        <input type="password" name="password" id="editFormPass" placeholder="Пароль" required>
+
+
+                        <span class="toggle-icon eye-close" onclick="togglePassword('editFormPass')"></span>
+                    </label>
+                    <label class="password-toggle">
+                        <div class="placeholder-text" style="display: none;">Подтверждение пароля</div>
+                        <input type="password" name="password" id="editFormPassAgain"
+                            placeholder="Подтверждение пароля" required>
+
+
+                        <span class="toggle-icon eye-close" onclick="togglePassword('editFormPassAgain')"></span>
+                    </label>
+                    <p id="password-error" style="color: red; display: none;">Пароли не совпадают</p>
+                </div>
+                
+            </form>
+            <div class="form__btns">
+                <a href="../users/" class="btn form-btn form-btn_logout" ontouchstart>Выйти</a>
+                <button type="submit" form="formEditProfile" class="btn form-btn form-btn_save" ontouchstart>Сохранить</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="screen__footer">
+
+        <div class="screen__footer__nav">
+            <div class="footer__nav-item ">
+                <div class="footer__nav-item__wrapper">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M22 12C22 17.523 17.523 22 12 22C6.477 22 2 17.523 2 12C2 6.478 6.477 2 12 2C17.523 2 22 6.478 22 12Z"
+                            fill="#81E462" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.8597 8.70481L14.2397 13.8248C14.1797 14.0348 14.0097 14.2048 13.7997 14.2658L8.69972 15.8648C8.35972 15.9758 8.02972 15.6448 8.13972 15.3048L9.73972 10.1748C9.79972 9.96481 9.96972 9.80481 10.1797 9.73481L15.2997 8.13481C15.6497 8.02481 15.9697 8.35481 15.8597 8.70481Z"
+                            fill="#2CBA00" />
+                    </svg>
+                </div>
+
+                <span class="footer__nav-profile-title">Контакты</span>
+            </div>
+            <div class="footer__nav-item ">
+                <div class="footer__nav-item__wrapper">
+                    <svg width="24" height="24" viewBox="0 2 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 5.5C12.9283 5.5 13.8185 5.86875 14.4749 6.52513C15.1313 7.1815 15.5 8.07174 15.5 9C15.5 9.92826 15.1313 10.8185 14.4749 11.4749C13.8185 12.1313 12.9283 12.5 12 12.5C11.0717 12.5 10.1815 12.1313 9.52513 11.4749C8.86875 10.8185 8.5 9.92826 8.5 9C8.5 8.07174 8.86875 7.1815 9.52513 6.52513C10.1815 5.86875 11.0717 5.5 12 5.5ZM5 8C5.56 8 6.08 8.15 6.53 8.42C6.38 9.85 6.8 11.27 7.66 12.38C7.16 13.34 6.16 14 5 14C4.20435 14 3.44129 13.6839 2.87868 13.1213C2.31607 12.5587 2 11.7956 2 11C2 10.2044 2.31607 9.44129 2.87868 8.87868C3.44129 8.31607 4.20435 8 5 8ZM19 8C19.7956 8 20.5587 8.31607 21.1213 8.87868C21.6839 9.44129 22 10.2044 22 11C22 11.7956 21.6839 12.5587 21.1213 13.1213C20.5587 13.6839 19.7956 14 19 14C17.84 14 16.84 13.34 16.34 12.38C17.2115 11.2542 17.6161 9.83616 17.47 8.42C17.92 8.15 18.44 8 19 8ZM5.5 18.25C5.5 16.18 8.41 14.5 12 14.5C15.59 14.5 18.5 16.18 18.5 18.25V20H5.5V18.25ZM0 20V18.5C0 17.11 1.89 15.94 4.45 15.6C3.86 16.28 3.5 17.22 3.5 18.25V20H0ZM24 20H20.5V18.25C20.5 17.22 20.14 16.28 19.55 15.6C22.11 15.94 24 17.11 24 18.5V20Z"
+                            fill="#2CBA00" />
+                    </svg>
+                </div>
+                <span class="footer__nav-profile-title">Пользователи</span>
+            </div>
+            <div class="footer__nav-item nav-item_profile select">
+                <div class="footer__nav-item__wrapper ">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12.4971 12.5838C15.4351 12.5838 17.7891 10.2288 17.7891 7.29176C17.7891 4.35476 15.4351 1.99976 12.4971 1.99976C9.56008 1.99976 7.20508 4.35476 7.20508 7.29176C7.20508 10.2288 9.56008 12.5838 12.4971 12.5838Z"
+                            fill="#81E462" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12.497 15.1746C8.184 15.1746 4.5 15.8546 4.5 18.5746C4.5 21.2956 8.161 21.9996 12.497 21.9996C16.81 21.9996 20.494 21.3206 20.494 18.5996C20.494 15.8786 16.834 15.1746 12.497 15.1746Z"
+                            fill="#2CBA00" />
+                    </svg>
+                </div>
+                <span class="footer__nav-profile-title">Профиль</span>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+
+    <script src="../scripts/formProfile.js"></script>
+</body>
+
+</html>
