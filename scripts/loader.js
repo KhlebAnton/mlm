@@ -43,7 +43,8 @@ function startAnimWelcome() {
 // form
 const formAuth = document.getElementById('authForm');
 formAuth.addEventListener('submit', (e) => {
-    e.preventDefault()
+    e.preventDefault();
+    window.location.href = '../users/'
 })
 
 // маска тел
