@@ -846,7 +846,6 @@ body {
     transition: transform 0.3s ease-out;
     border-radius: 20px;
     border: 1px solid #FFC200;
-    box-shadow: 6px 0px 8px 0px #07860021;
 
     display: flex;
     align-items: center;
@@ -1041,7 +1040,7 @@ body {
     justify-content: center;
     background: linear-gradient(98.92deg, #FF3030 3.53%, #DE0000 24.19%, #EE0000 41.1%, #E90000 57.07%, #FF0000 77.26%, #CA0000 97.45%);
     border: 1px solid #FF4647;
-    box-shadow: 58px 26px 68px 0px #232C5D0F;
+
 
 }
 .waiting-call__close::before {
@@ -1057,7 +1056,7 @@ body {
     border-radius: 20px;
     background: #FFFFFF;
     border: 1px solid #EAECF0;
-    box-shadow: 58px 26px 68px 0px #232C5D0F;
+    
     padding: 16px;
     display: flex;
     align-items: center;
@@ -1130,7 +1129,7 @@ body {
 .invitations-call__btn_apply {
     background: linear-gradient(99.35deg, #00DE00 4.42%, #06E600 17.47%, #08D200 23.99%, #0CE300 31.45%, #14CF00 49.62%, #16BB00 58.94%, #1DC200 70.59%, #28AD01 97.62%);
     border: 1px solid #38EC00;
-    box-shadow: 0px 10px 34.3px 0px #20B701A3;
+    
     flex-grow: 2;
     display: flex;
     align-items: center;
@@ -1163,7 +1162,7 @@ body {
     justify-content: center;
     background: linear-gradient(98.92deg, #FF3030 3.53%, #DE0000 24.19%, #EE0000 41.1%, #E90000 57.07%, #FF0000 77.26%, #CA0000 97.45%);
     border: 1px solid #FF4647;
-    box-shadow: 58px 26px 68px 0px #232C5D0F;
+   
 
 }
 .invitations-call__btn_close::before {
@@ -1187,7 +1186,7 @@ body {
     height: 68px;
     background: #FFFFFF;
     border: 1px solid #EAECF0;
-    box-shadow: 58px 26px 68px 0px #232C5D0F;
+    
     padding: 16px;
     border-radius: 20px;
     flex-grow: 2;
@@ -1237,7 +1236,7 @@ background: url('../img/close_bg.svg')50% / contain no-repeat;
     flex-shrink: 0;
     border: 1px solid #0AFA02;
     border-radius: 20px;
-    box-shadow: 58px 26px 68px 0px #232C5D0F;
+   
     color: #FFFFFF;
     font-size: 12px;
     font-weight: 600;
