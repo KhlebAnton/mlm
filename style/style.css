@@ -662,11 +662,19 @@ body {
 .swiper-slide {
     flex: 0 0 auto;
     width: 100%;
-    max-width: 360px;
-    margin-right: 48px;
+    max-width: 450px;
+    margin: 0;
     padding: 5px;
 }
-
+@media (min-width:450px) {
+    .swiper-slide {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 343px;
+        margin: 0;
+        padding: 5px;
+    }
+}
 .drag-handle {
     cursor: grab;
 
@@ -731,7 +739,7 @@ body {
     left: 0;
     width: 100%;
     height: 316px;
-    background: url('../img/bg_user_img.png') 50% / contain no-repeat;
+    background: url('../img/bg_user_img.png') 50% / 100% 100% no-repeat;
     z-index: -1;
 }
 
