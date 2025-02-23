@@ -1352,4 +1352,15 @@ body {
         margin-top: 180px;
         border-radius: 60px 60px 0 0;
     }
+    .screen-date {
+        max-width: none;
+        padding-left: 2rem;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    .screen-date::-webkit-scrollbar { display: none; }
+    .time-picker__container {
+        max-width: 360px;
+        margin: 0 auto;
+    }
 }
