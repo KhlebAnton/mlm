@@ -33,13 +33,6 @@ a {
     box-sizing: border-box;
 }
 
-html {
-    background-color: #2CBA00;
-    background-attachment: fixed;
-    text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-
 html,
 body {
     min-height: 100%;
@@ -51,6 +44,10 @@ body {
 }
 html {
     display: flex;
+    background-color: #2CBA00;
+    background-attachment: fixed;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 body {
     flex-grow: 1;
