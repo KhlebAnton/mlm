@@ -42,14 +42,19 @@ html {
 
 html,
 body {
-    
+    min-height: 100%;
     width: 100%;
     background: linear-gradient(135deg, #2CBA00 0%, #2CBA00 100%);
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-weight: 400;
     overflow-x: hidden;
 }
-
+html {
+    display: flex;
+}
+body {
+    flex-grow: 1;
+}
 input {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-weight: 400;
