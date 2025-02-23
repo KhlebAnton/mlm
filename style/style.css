@@ -1512,13 +1512,125 @@ label:focus-within {
     font-size: 18px;
     line-height: 20px;
 }
+/* subs page */
+.screen-subs {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 36px;
+    position: static;
+}
+.subs-card {
+    padding: 18px 22px 34px;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #ffffff;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.subs-top {
+    background: linear-gradient(99.35deg, #00DE00 4.42%, #06E600 17.47%, #08D200 23.99%, #0CE300 31.45%, #14CF00 49.62%, #16BB00 58.94%, #1DC200 70.59%, #28AD01 97.62%);
+    border: 1px solid #3BFF00;
+}
+.subs-top__title {
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.subs-top__text {
+    font-size: 14px;
+    line-height: 18px;
+}
+.subs-card__title {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    color: #F4F5F7;
+}
+.subs-card__desc {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.decor-dot {
+    width: 3px;
+    height: 3px;
+    border-radius: 3px;
+    background: #896800;
 
+}
+.subs-card__desc__precent {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.subs-card__desc__precent::after {
+width: 12px;
+height: 12px;
+content: '';
+display: block;
+background: url('../img/Star.svg') 50% / contain no-repeat;
+}
+.subs-card__desc__title {
+    font-size: 12px;
+    line-height: 14px;
+}
+.card-gold {
+    background: linear-gradient(105.14deg, #AD8400 3.44%, #EDB400 14.76%, #DCA700 28.43%, #F9BE00 38.81%, #EFB600 58.14%, #C59500 67.57%, #D6A300 83.6%, #AD8400 97.74%);
+    border: 1px solid #EEB600;
+}
+.subs-card__btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.subs-card__btn-buy {
+    height: 47px;
+    border-radius: 24px;
+    background: #292A20;
+font-size: 16px;
+font-weight: 600;
+line-height: 19px;
+padding: 0 20px;
+margin-top: 10px;
+max-width: 135px;
+width: 100%;
+justify-content: space-between;
 
-
-
-
-
-
+}
+.subs-card__btn-buy::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url('../img/bag-2.svg') 50% / contain no-repeat;
+}
+.subs-card__price {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+.card-silver {
+    background: linear-gradient(104.71deg, #7E7E80 2.38%, #E2E2E2 49.25%, #A1A1A3 98.04%);
+    border: 1px solid #DADADA;
+}
+.card-brow {
+    background: linear-gradient(103.71deg, #492D24 2.11%, #E7C19C 48.72%, #4C3126 97.24%);
+    border: 1px solid #9E6C53;
+}
+.screen-subs .screen__content {
+    display: flex;
+    gap: 20px;
+}
 
 
 

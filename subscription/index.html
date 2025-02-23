@@ -9,13 +9,9 @@
 </head>
 
 <body>
-    <div class="message__save">
-        <div class="message__wrapper">
-            <span>Данные успешно сохранены</span>
-        </div>
 
     </div>
-    <div class="screen screen-profile">
+    <div class="screen screen-subs">
         <header class="screen__header">
             <a href="../" class="btn btn_header btn-home" ontouchstart></a>
             <div class="btn btn_header btn-profile" ontouchstart>
@@ -33,83 +29,69 @@
             </div>
         </header>
         <div class="screen__content">
-            <div class="subscription-card">
-                <div class="subscription-card__title">
-                    подписка
+            <div class="subs-card subs-top">
+                <div class="subs-top__title">Доступ к базе пользователей</div>
+                <div class="subs-top__text">
+                    После подписки получаете доступ к базе проверенных пользователей, готовых к диалогу.
                 </div>
-                <div class="subscription-card__data">До окончания осталось 23 дня</div>
             </div>
-            <a href="../subscription/" class="subscription-card red_card">
-                <div class="subscription-card__title">
-                    Приобрести подписку
+            <div class="subs-card card-gold">
+                <div class="subs-card__title">
+                    1 год подписки
                 </div>
-                <div class="subscription-card__data">Срок вашей подписки истёк, продлите подписку!</div>
-            </a>
-            <form id="formEditProfile" class="form-edit-profile">
-                <div class="edit-profile__desc">
-                    <div class="edit-profile__title">
-                        Редактирование данных
+                <div class="subs-card__desc">
+                    <div class="subs-card__desc__title">
+                        Год подписки со скидкой
                     </div>
-                    <div class="edit-profile__text">
-                        На данной странице вы можете скорректировать данные вашего профиля а так-же приобрести подписку
+                    <div class="decor-dot"></div>
+                    <div class="subs-card__desc__precent">
+                        10%
                     </div>
+                    
                 </div>
-                <div class="edit-profile__photo">
-                    <div id="preview-container">
-                        <img class="edit-profile__photo_prev" id="preview-image" src="../img/user.png" alt="Preview">
+                <div class="subs-card__btns">
+                    <div class="btn subs-card__btn-buy" ontouchstart>Купить</div>
+                    <div class="subs-card__price">25 000 Руб.</div>
+                </div>
+
+            </div>
+            <div class="subs-card card-silver">
+                <div class="subs-card__title">
+                    6 месяцев подписки
+                </div>
+                <div class="subs-card__desc">
+                    <div class="subs-card__desc__title">
+                        Пол года подписки по скидке
                     </div>
-                    <input type="file" id="upload-button" accept="image/*" style="display: none;">
-                    <label class="btn edit-profile__btn-photo" for="upload-button">
-                        Загрузить фото
-                    </label>
+                    <div class="decor-dot"></div>
+                    <div class="subs-card__desc__precent">
+                        5%
+                    </div>
+                    
                 </div>
-                <div class="edit-profile__inputs">
-                    <label>
-                        <div class="placeholder-text" style="display: none;">Логин</div>
-                        <input type="text" name="login" id="editFormLogin" placeholder="Логин" required>
-
-
-                    </label>
-                    <label>
-                        <div class="placeholder-text" style="display: none;">ФИО</div>
-                        <input type="text" name="name" id="editFormName" placeholder="ФИО" required>
-
-
-                    </label>
-                    <label>
-                        <div class="placeholder-text" style="display: none;">Телефон</div>
-                        <input type="tel" name="tel" id="editFormTel" placeholder="Телефон" required>
-
-
-                    </label>
-                    <label>
-                        <div class="placeholder-text" style="display: none;">Электронная почта</div>
-                        <input type="email" name="email" id="editFormEmail" placeholder="Электронная почта" required>
-
-
-                    </label>
-                    <label class="password-toggle">
-                        <div class="placeholder-text" style="display: none;">Пароль</div>
-                        <input type="password" name="password" id="editFormPass" placeholder="Пароль" required>
-
-
-                        <span class="toggle-icon eye-close" onclick="togglePassword('editFormPass')"></span>
-                    </label>
-                    <label class="password-toggle">
-                        <div class="placeholder-text" style="display: none;">Подтверждение пароля</div>
-                        <input type="password" name="password" id="editFormPassAgain"
-                            placeholder="Подтверждение пароля" required>
-
-
-                        <span class="toggle-icon eye-close" onclick="togglePassword('editFormPassAgain')"></span>
-                    </label>
-                    <p id="password-error" style="color: red; display: none;">Пароли не совпадают</p>
+                <div class="subs-card__btns">
+                    <div class="btn subs-card__btn-buy" ontouchstart>Купить</div>
+                    <div class="subs-card__price">25 000 Руб.</div>
                 </div>
-                
-            </form>
-            <div class="form__btns">
-                <a href="../users/" class="btn form-btn form-btn_logout" ontouchstart>Выйти</a>
-                <button type="submit" form="formEditProfile" class="btn form-btn form-btn_save" ontouchstart>Сохранить</div>
+
+            </div>
+            <div class="subs-card card-brow">
+                <div class="subs-card__title">
+                    1 месяц подписки
+                </div>
+                <div class="subs-card__desc">
+                    <div class="subs-card__desc__title">
+                        Скидка не предоставляется
+                    </div>
+                    <div class="decor-dot"></div>
+                    
+                    
+                </div>
+                <div class="subs-card__btns">
+                    <div class="btn subs-card__btn-buy" ontouchstart>Купить</div>
+                    <div class="subs-card__price">25 000 Руб.</div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -143,7 +125,7 @@
                 </div>
                 <span class="footer__nav-profile-title">Пользователи</span>
             </a>
-            <a href="../profile" class="footer__nav-item nav-item_profile select">
+            <a href="../profile" class="footer__nav-item nav-item_profile ">
                 <div class="footer__nav-item__wrapper ">
                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -155,7 +137,7 @@
                     </svg>
                 </div>
                 <span class="footer__nav-profile-title">Профиль</span>
-            </div>
+        </div>
         </div>
     </footer>
     </div>
