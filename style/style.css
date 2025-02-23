@@ -42,6 +42,7 @@ body {
     font-weight: 400;
     overflow-x: hidden;
 }
+
 html {
     display: flex;
     background-color: #2CBA00;
@@ -49,9 +50,11 @@ html {
     text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
+
 body {
     flex-grow: 1;
 }
+
 input {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-weight: 400;
@@ -76,12 +79,14 @@ input {
     cursor: pointer;
 
 }
+
 button {
     border: none;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     color: inherit;
     font-size: 1em;
 }
+
 .politics-text {
     font-size: 11px;
     line-height: 16px;
@@ -595,6 +600,7 @@ body {
     gap: 16px;
     text-align: center;
 }
+
 .screen__footer::before {
     pointer-events: none;
     z-index: -2;
@@ -608,6 +614,7 @@ body {
     position: absolute;
     content: '© 2025 Проведение конференций';
 }
+
 .screen__footer__nav {
     position: relative;
     width: 100%;
@@ -1328,6 +1335,7 @@ body {
     gap: 36px;
     position: static;
 }
+
 .subscription-card {
     max-width: 500px;
     width: 100%;
@@ -1337,6 +1345,7 @@ body {
     background: linear-gradient(105.14deg, #AD8400 3.44%, #EDB400 14.76%, #DCA700 28.43%, #F9BE00 38.81%, #EFB600 58.14%, #C59500 67.57%, #D6A300 83.6%, #AD8400 97.74%);
     border: 1px solid #F5BB00;
 }
+
 .subscription-card__title {
     font-weight: 700;
     font-size: 16px;
@@ -1345,25 +1354,30 @@ body {
     text-transform: uppercase;
     margin-bottom: 4px;
 }
+
 .subscription-card__data {
     font-size: 14px;
     color: #ffffff;
     line-height: 18px;
-    
+
 }
+
 .subscription-card.red_card {
     background: linear-gradient(98.92deg, #FF3030 3.53%, #DE0000 24.19%, #EE0000 41.1%, #E90000 57.07%, #FF0000 77.26%, #CA0000 97.45%);
     border: 1px solid #D20000;
 }
+
 .subscription-card.red_card .subscription-card__title {
     color: #ffffff;
 }
+
 .screen-profile .screen__content {
     display: flex;
     flex-direction: column;
     gap: 42px;
-    
+
 }
+
 .message__save {
     position: fixed;
     z-index: 10;
@@ -1373,12 +1387,14 @@ body {
     animation: message 1s ease;
     display: none;
 }
+
 @keyframes message {
     from {
         opacity: 0;
         transform: translateY(-100%);
     }
 }
+
 .message__wrapper {
     padding: 12px 16px;
     background: #F6FFF9;
@@ -1394,24 +1410,27 @@ body {
     border-radius: 10px;
     margin: 0 auto;
 }
+
 .message__wrapper::before {
     width: 20px;
     height: 20px;
     content: '';
     display: block;
     background: url('../img/check.svg') 50% / contain no-repeat;
-    
+
     flex-shrink: 0;
 }
+
 .form-edit-profile {
     padding: 24px;
     background: #FFFFFF;
-border-radius: 20px;
-box-shadow: 0px 0px 10px 0px #00467E0F;
-display: flex;
-flex-direction: column;
-gap: 24px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px #00467E0F;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
+
 .edit-profile__photo_prev {
     width: 148px;
     height: 148px;
@@ -1419,39 +1438,48 @@ gap: 24px;
     object-fit: cover;
     margin-bottom: 16px;
 }
+
 .edit-profile__btn-photo {
     border: 1px solid #165C00;
     border-radius: 10px;
-     color: #196F00;
-     height: 48px;
+    color: #196F00;
+    height: 48px;
 }
+
 .edit-profile__inputs label {
     position: relative;
     display: block;
     font-family: "Intel", sans-serif;
 }
+
 .password-toggle input {
-    padding-right: 40px; /* Отступ для иконки */
+    padding-right: 40px;
+    /* Отступ для иконки */
 }
+
 .password-toggle .toggle-icon {
     position: absolute;
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    user-select: none; /* Запрещаем выделение текста */
+    user-select: none;
+    /* Запрещаем выделение текста */
     background: url('../img/eye-open.svg') 50% / contain no-repeat;
     width: 20px;
     height: 20px;
 }
+
 .password-toggle .toggle-icon.eye-close {
     background: url('../img/eye-close.svg') 50% / contain no-repeat;
 }
+
 .edit-profile__inputs {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
+
 .edit-profile__inputs label {
     background: #F5F5F5;
     height: 52px;
@@ -1462,26 +1490,33 @@ gap: 24px;
     flex-direction: column;
     justify-content: center;
 }
+
 .edit-profile__inputs input {
-   background-color: inherit;
+    background-color: inherit;
     width: 100%;
     border: none;
     font-size: 16px;
 }
+
 .edit-profile__inputs input:focus {
     outline: none;
 }
+
 label:focus-within {
-    outline: 1px solid #0077FF; /* Пример стиля outline */
+    outline: 1px solid #0077FF;
+    /* Пример стиля outline */
 }
+
 .placeholder-text {
     font-size: 12px;
     color: #909090;
 }
+
 .form__btns {
     display: flex;
     gap: 16px;
 }
+
 .form-btn {
     height: 62px;
     background: #FFFFFF;
@@ -1490,6 +1525,7 @@ label:focus-within {
     display: flex;
     gap: 10px;
 }
+
 .form-btn_logout::before {
     content: '';
     display: block;
@@ -1497,6 +1533,7 @@ label:focus-within {
     height: 22px;
     background: url('../img/logout.svg') 50% / contain no-repeat;
 }
+
 .form-btn_save::before {
     content: '';
     display: block;
@@ -1511,10 +1548,12 @@ label:focus-within {
     line-height: 28px;
 
 }
+
 .edit-profile__text {
     font-size: 18px;
     line-height: 20px;
 }
+
 /* subs page */
 .screen-subs {
     padding: 16px;
@@ -1524,6 +1563,7 @@ label:focus-within {
     gap: 36px;
     position: static;
 }
+
 .subs-card {
     padding: 18px 22px 34px;
     border-radius: 20px;
@@ -1535,31 +1575,37 @@ label:focus-within {
     max-width: 400px;
     margin: 0 auto;
 }
+
 .subs-top {
     background: linear-gradient(99.35deg, #00DE00 4.42%, #06E600 17.47%, #08D200 23.99%, #0CE300 31.45%, #14CF00 49.62%, #16BB00 58.94%, #1DC200 70.59%, #28AD01 97.62%);
     border: 1px solid #3BFF00;
 }
+
 .subs-top__title {
     font-weight: 700;
     font-size: 15px;
     text-transform: uppercase;
 }
+
 .subs-top__text {
     font-size: 14px;
     line-height: 18px;
 }
+
 .subs-card__title {
     font-weight: 700;
     font-size: 21px;
     line-height: 25px;
     color: #F4F5F7;
 }
+
 .subs-card__desc {
     width: 100%;
     display: flex;
     gap: 8px;
     align-items: center;
 }
+
 .decor-dot {
     width: 3px;
     height: 3px;
@@ -1567,6 +1613,7 @@ label:focus-within {
     background: #896800;
 
 }
+
 .subs-card__desc__precent {
     font-weight: 700;
     font-size: 12px;
@@ -1575,41 +1622,47 @@ label:focus-within {
     align-items: center;
     gap: 4px;
 }
+
 .subs-card__desc__precent::after {
-width: 12px;
-height: 12px;
-content: '';
-display: block;
-background: url('../img/Star.svg') 50% / contain no-repeat;
+    width: 12px;
+    height: 12px;
+    content: '';
+    display: block;
+    background: url('../img/Star.svg') 50% / contain no-repeat;
 }
+
 .subs-card__desc__title {
     font-size: 12px;
     line-height: 14px;
 }
+
 .card-gold {
     background: linear-gradient(105.14deg, #AD8400 3.44%, #EDB400 14.76%, #DCA700 28.43%, #F9BE00 38.81%, #EFB600 58.14%, #C59500 67.57%, #D6A300 83.6%, #AD8400 97.74%);
     border: 1px solid #EEB600;
 }
+
 .subs-card__btns {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
 }
+
 .subs-card__btn-buy {
     height: 47px;
     border-radius: 24px;
     background: #292A20;
-font-size: 16px;
-font-weight: 600;
-line-height: 19px;
-padding: 0 20px;
-margin-top: 10px;
-max-width: 135px;
-width: 100%;
-justify-content: space-between;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    padding: 0 20px;
+    margin-top: 10px;
+    max-width: 135px;
+    width: 100%;
+    justify-content: space-between;
 
 }
+
 .subs-card__btn-buy::before {
     content: '';
     display: block;
@@ -1617,27 +1670,90 @@ justify-content: space-between;
     height: 20px;
     background: url('../img/bag-2.svg') 50% / contain no-repeat;
 }
+
 .subs-card__price {
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
 }
+
 .card-silver {
     background: linear-gradient(104.71deg, #7E7E80 2.38%, #E2E2E2 49.25%, #A1A1A3 98.04%);
     border: 1px solid #DADADA;
 }
+
 .card-brow {
     background: linear-gradient(103.71deg, #492D24 2.11%, #E7C19C 48.72%, #4C3126 97.24%);
     border: 1px solid #9E6C53;
 }
+
 .screen-subs .screen__content {
     display: flex;
     gap: 20px;
 }
 
+/* access page */
+.screen-access {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 36px;
+    position: static;
+}
 
+.access__wrapper {
+    background: #FFFFFF;
+    box-shadow: 8px 40px 96px 0px #123D6524;
 
+    box-shadow: -8px -6px 80px 0px #FFFFFF2E inset;
+    padding: 60px 38px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    max-width: 300px;
+    margin: 0 auto;
 
+}
+
+.lock__img {
+    width: 95px;
+    height: 140px;
+    background: url('../img/Lock.png') 50% / contain no-repeat;
+}
+
+.access__desc {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+
+}
+
+.access__title {
+    color: #696969;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.access__text {
+    font-size: 12px;
+}
+
+.access__btn {
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    background: linear-gradient(99.35deg, #00DE00 4.42%, #06E600 17.47%, #08D200 23.99%, #0CE300 31.45%, #14CF00 49.62%, #16BB00 58.94%, #1DC200 70.59%, #28AD01 97.62%);
+    border: 1px solid #20C800;
+    padding: 0 21px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 30px;
+}
 
 
 
@@ -1665,27 +1781,33 @@ justify-content: space-between;
         padding: 8px;
         justify-content: space-between;
     }
+
     .btn-profile {
         justify-content: end;
     }
+
     .screen {
         max-width: 1200px;
         margin: 0 auto;
     }
+
     .screen__footer__nav {
         max-width: 600px;
         margin: 0 auto;
     }
+
     html {
         overflow: auto;
         min-height: 100%;
         height: auto;
         background: url(../img/bg.png) 50% / cover no-repeat;
     }
+
     body {
         height: 100%;
         background: none;
     }
+
     .screen-welcome {
         max-width: 400px;
         margin: 0 auto;
@@ -1695,22 +1817,29 @@ justify-content: space-between;
         border-radius: 40px;
         margin-top: 60px;
     }
+
     .bg_green {
-        background:none;
+        background: none;
     }
+
     .screen_form {
         max-width: 600px;
         margin: 0 auto;
         margin-top: 180px;
         border-radius: 60px 60px 0 0;
     }
+
     .screen-date {
         max-width: none;
         padding-left: 2rem;
         scrollbar-width: none;
         -ms-overflow-style: none;
     }
-    .screen-date::-webkit-scrollbar { display: none; }
+
+    .screen-date::-webkit-scrollbar {
+        display: none;
+    }
+
     .time-picker__container {
         max-width: 360px;
         margin: 0 auto;
