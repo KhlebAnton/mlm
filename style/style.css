@@ -786,6 +786,7 @@ body {
 .user-item__desc {
     position: absolute;
     left: 10px;
+    width: calc(100% - 20px);
     bottom: 10px;
     color: #ffffff;
     display: flex;
@@ -821,7 +822,7 @@ body {
 
 .user-item__info {
     font-weight: 600;
-    height: 46px;
+    min-height: 46px;
     display: flex;
     align-items: start;
     justify-content: center;
@@ -829,7 +830,7 @@ body {
     gap: 2px;
     background: #FFFFFF33;
     backdrop-filter: blur(40px);
-    padding: 0 25px;
+    padding: 5px 25px;
     border-radius: 60px;
 }
 
@@ -933,6 +934,7 @@ body {
     -webkit-overflow-scrolling: touch;
     /* For smooth scrolling on iOS */
     scroll-snap-type: y mandatory;
+    cursor:default;
 }
 
 .time-options {
@@ -941,6 +943,7 @@ body {
     align-items: center;
     padding: 0;
     margin: 0;
+    
 }
 
 .time-option {
@@ -948,7 +951,7 @@ body {
     line-height: 38px;
     text-align: center;
     scroll-snap-align: center;
-    cursor: pointer;
+    
     width: 100%;
     /* Make sure the element takes up the full width */
     box-sizing: border-box;
@@ -969,6 +972,11 @@ body {
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
+    scroll-behavior: smooth;
+    -ms-user-select: none; 
+		-moz-user-select: none; 
+		-webkit-user-select: none; 
+		user-select: none; 
 }
 
 .screen-date {
@@ -994,8 +1002,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
-
+.time-column_del__icon {
+    height: 38px;
+    line-height: 38px;
+    background: #FFFFFF33;
+    padding: 0 5px;
+}
 .close_time-picker {
     flex-grow: 2;
     display: flex;
