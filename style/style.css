@@ -787,12 +787,12 @@ body {
     position: absolute;
     left: 10px;
     width: calc(100% - 20px);
-    bottom: 10px;
+    bottom: 16px;
     color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 6px;
+    gap: 10px;
 }
 
 .answer-count__wrapper {
@@ -839,6 +839,7 @@ body {
     display: flex;
     align-items: center;
     gap: 6px;
+    max-width: 165px;
 }
 
 .user-item__info-name::after {
