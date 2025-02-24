@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (translateX >= thresholdTranslate) {
                 translateX = maxTranslate;
                 swiped = true;
+                showScreenDate();
                 setTimeout(() => {
                     resetSwipe();
                 }, 1000);
@@ -66,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
             swipeBlock.addEventListener('transitionend', () => {
                 if (swiped) {
                     
-                    showScreenDate();
+                    
                 } else {
                     swipeText.style.opacity = '1';
                 }
