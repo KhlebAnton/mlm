@@ -33,18 +33,111 @@
             </div>
         </header>
         <div class="screen__content">
-            <div class="subscription-card">
-                <div class="subscription-card__title">
-                    подписка
+
+            <div class="subs-card subs-top">
+                <div class="subs-top__title">Доступ к базе пользователей</div>
+                <div class="subs-top__text">
+                    После подписки получаете доступ к базе проверенных пользователей, готовых к диалогу.
                 </div>
-                <div class="subscription-card__data">До окончания осталось 23 дня</div>
             </div>
-            <a href="../subscription/" class="subscription-card red_card">
-                <div class="subscription-card__title">
-                    Приобрести подписку
+            <div class="user-list__wrapper">
+                <div class="user-list__top">
+                    <div class="user-list__icon"></div>
+                    <div class="user-list__info">
+                        <div class="user-list__title">
+                            Перейти к списку пользователей
+                        </div>
+                        <div class="user-list__text">
+                            Начните событие прямо сейчас!
+                        </div>
+                    </div>
                 </div>
-                <div class="subscription-card__data">Срок вашей подписки истёк, продлите подписку!</div>
-            </a>
+                <div class="user-list__users-profiles">
+                    <div class="users-profiles__img-wrapper">
+                        <img src="../img/userlist1.png">
+                    </div>
+                    <div class="users-profiles__img-wrapper">
+                        <img src="../img/userlist2.png">
+                    </div>
+                    <div class="users-profiles__img-wrapper">
+                        <img src="../img/userlist2.png">
+                    </div>
+                    <div class="users-profiles__img-wrapper">
+                        <img src="../img/userlist2.png">
+                    </div>
+                    <div class="users-profiles__img-wrapper">
+                        <img src="../img/userlist2.png">
+                    </div>
+                    <div class="users-profiles__img-wrapper">
+                        <span class="users-profiles__img-wrapper-text">+300к</span>
+                    </div>
+                </div>
+                <div class="btn btn_user-list" ontouchstart>Перейти</div>
+            </div>
+            <div class="sub-status__wrapper">
+                <div class="subscription-card">
+                    <svg class="subscription-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="18.8889" stroke="#20A000" stroke-width="2.22222" />
+                        <path
+                            d="M20 1.11111C22.4805 1.11111 24.9368 1.59969 27.2285 2.54894C29.5202 3.4982 31.6025 4.88954 33.3565 6.64354C35.1105 8.39753 36.5018 10.4798 37.4511 12.7715C38.4003 15.0632 38.8889 17.5195 38.8889 20"
+                            stroke="white" stroke-width="2.22222" stroke-linecap="round" />
+                        <path
+                            d="M20.25 18C19.9848 18 19.7304 18.1054 19.5429 18.2929C19.3554 18.4804 19.25 18.7348 19.25 19V25C19.25 25.2652 19.3554 25.5196 19.5429 25.7071C19.7304 25.8946 19.9848 26 20.25 26C20.5152 26 20.7696 25.8946 20.9571 25.7071C21.1446 25.5196 21.25 25.2652 21.25 25V19C21.25 18.7348 21.1446 18.4804 20.9571 18.2929C20.7696 18.1054 20.5152 18 20.25 18ZM20.25 14C20.0028 14 19.7611 14.0733 19.5555 14.2107C19.35 14.348 19.1898 14.5432 19.0952 14.7716C19.0005 15.0001 18.9758 15.2514 19.024 15.4939C19.0723 15.7363 19.1913 15.9591 19.3661 16.1339C19.5409 16.3087 19.7637 16.4278 20.0061 16.476C20.2486 16.5242 20.4999 16.4995 20.7284 16.4048C20.9568 16.3102 21.152 16.15 21.2893 15.9445C21.4267 15.7389 21.5 15.4972 21.5 15.25C21.5 14.9185 21.3683 14.6005 21.1339 14.3661C20.8995 14.1317 20.5815 14 20.25 14Z"
+                            fill="white" />
+                    </svg>
+                    <div class="subscription-card__info_wrapper">
+                        <div class="subscription-card__title">
+                            статус подписки
+                        </div>
+                        <div class="subscription-card__data">До окончания осталось 23 дня</div>
+                    </div>
+
+                </div>
+                <a href="../subscription/" class="subscription-card red_card">
+
+                    <svg class="subscription-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="18.8889" stroke="#20A000" stroke-width="2.22222" />
+                        <path
+                            d="M20 1.11111C22.4805 1.11111 24.9368 1.59969 27.2285 2.54894C29.5202 3.4982 31.6025 4.88954 33.3565 6.64354C35.1105 8.39753 36.5018 10.4798 37.4511 12.7715C38.4003 15.0632 38.8889 17.5195 38.8889 20"
+                            stroke="white" stroke-width="2.22222" stroke-linecap="round" />
+                        <path
+                            d="M20.25 18C19.9848 18 19.7304 18.1054 19.5429 18.2929C19.3554 18.4804 19.25 18.7348 19.25 19V25C19.25 25.2652 19.3554 25.5196 19.5429 25.7071C19.7304 25.8946 19.9848 26 20.25 26C20.5152 26 20.7696 25.8946 20.9571 25.7071C21.1446 25.5196 21.25 25.2652 21.25 25V19C21.25 18.7348 21.1446 18.4804 20.9571 18.2929C20.7696 18.1054 20.5152 18 20.25 18ZM20.25 14C20.0028 14 19.7611 14.0733 19.5555 14.2107C19.35 14.348 19.1898 14.5432 19.0952 14.7716C19.0005 15.0001 18.9758 15.2514 19.024 15.4939C19.0723 15.7363 19.1913 15.9591 19.3661 16.1339C19.5409 16.3087 19.7637 16.4278 20.0061 16.476C20.2486 16.5242 20.4999 16.4995 20.7284 16.4048C20.9568 16.3102 21.152 16.15 21.2893 15.9445C21.4267 15.7389 21.5 15.4972 21.5 15.25C21.5 14.9185 21.3683 14.6005 21.1339 14.3661C20.8995 14.1317 20.5815 14 20.25 14Z"
+                            fill="white" />
+                    </svg>
+                    <div class="subscription-card__info_wrapper">
+                        <div class="subscription-card__title">
+                            статус подписки
+                        </div>
+                        <div class="subscription-card__data">Срок вашей подписки истёк, продлите подписку!</div>
+                    </div>
+
+                </a>
+                <div class="users-profile__status-wrapper">
+                    <form>
+                        <label class="users-profile__status">
+                            <span>Ваш статус</span>
+                            <input type="text" placeholder="Не более 50 символов" maxlength="50">
+                        </label>
+                        <div class="btn btn-status">Сохранить</div>
+                    </form>
+                </div>
+                <div class="users-profile__status-wrapper status__answer">
+                    <div class="status__icon">
+                        😻
+                    </div>
+                    <div class="status__answer-info">
+                        <div class="status__answer-title">
+                            Вы ответили на:
+                        </div>
+                        <div class="status__answer-count">
+                            56 запросов
+                        </div>
+                    </div>
+                </div>
+                <a href="../users/" class="btn form-btn form-btn_logout" ontouchstart>Выйти</a>
+            </div>
             <form id="formEditProfile" class="form-edit-profile">
                 <div class="edit-profile__desc">
                     <div class="edit-profile__title">
@@ -97,21 +190,23 @@
                     </label>
                     <label class="password-toggle">
                         <div class="placeholder-text" style="display: none;">Подтверждение пароля</div>
-                        <input type="password" name="password" id="editFormPassAgain"
-                            placeholder="Подтверждение пароля" required>
+                        <input type="password" name="password" id="editFormPassAgain" placeholder="Подтверждение пароля"
+                            required>
 
 
                         <span class="toggle-icon eye-close" onclick="togglePassword('editFormPassAgain')"></span>
                     </label>
                     <p id="password-error" style="color: red; display: none;">Пароли не совпадают</p>
                 </div>
-                
-            </form>
-            <div class="form__btns">
-                <a href="../users/" class="btn form-btn form-btn_logout" ontouchstart>Выйти</a>
-                <button type="submit" form="formEditProfile" class="btn form-btn form-btn_save" ontouchstart>Сохранить</div>
-            </div>
+                <div class="form__btns">
+                   
+                    <button type="submit" form="formEditProfile" class="btn form-btn form-btn_save"
+                        ontouchstart>Сохранить
+                </div>
         </div>
+        </form>
+
+    </div>
     </div>
 
 
@@ -155,7 +250,7 @@
                     </svg>
                 </div>
                 <span class="footer__nav-profile-title">Профиль</span>
-            </div>
+        </div>
         </div>
     </footer>
     </div>
