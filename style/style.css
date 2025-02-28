@@ -521,16 +521,52 @@ body {
     justify-content: space-between;
     gap: 16px;
 }
-
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+}
 .btn-home {
     max-width: 107px;
+    width: 100%;
     flex-shrink: 0;
     background-image: url('../img/logo_min.png');
     background-position: 20px 5px;
     background-repeat: no-repeat;
     background-size: contain;
+    flex-shrink: 0;
 }
+.header-nav__desktop {
+    width: 100%;
+    max-width: 525px;
+    display: flex;
+    align-items: center;
+    
+    padding: 2px;
+    border-radius: 16px;
+    background: #EAECF0;
 
+}
+.header-nav__btn {
+    height: 40px;
+    border-radius: 16px;
+    border: 1px solid #EAECF0;
+    font-size: 14px;
+    color: #686873;
+    padding: 10px 30px;
+}
+.header-nav__btn.open {
+    pointer-events: none;
+    background: linear-gradient(99.35deg, #00DE00 4.42%, #06E600 17.47%, #08D200 23.99%, #0CE300 31.45%, #14CF00 49.62%, #16BB00 58.94%, #1DC200 70.59%, #28AD01 97.62%);
+color: #ffffff;
+border: 1px solid #32FF00;
+}
+.header-nav__btn_contact {
+    background: #FFFFFF;
+
+}
 .btn-profile {
     justify-content: start;
 }
@@ -1520,6 +1556,8 @@ label:focus-within {
     width: 100%;
     display: flex;
     gap: 10px;
+    border: 1px solid #EAECF0;
+    padding: 0 15px;
 }
 
 .form-btn_logout::before {
@@ -1950,11 +1988,20 @@ justify-content: center;
 width: fit-content;
 margin-top: 5px;
 }
-
+.header-nav__desktop {
+    display: none;
+}
 
 
 
 @media (min-width:800px) {
+    .header-nav__desktop {
+        display: flex;
+        width: fit-content;
+    }
+    .nav-header {
+        justify-content: start;
+    }
     .screen__header {
 
         background: #FFFFFF;
@@ -2086,6 +2133,19 @@ margin-top: 5px;
         width: 12px;
         height: 12px;
         background: url('../img/user-vector.svg') 50% / contain no-repeat;
+    }
+    .screen-subs .screen__content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .screen-subs .screen__content .subs-card {
+        max-width: 380px;
+        margin: 0;
+    }
+    .screen__footer {
+        display: none;
     }
 }
 
